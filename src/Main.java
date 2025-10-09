@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         Scanner sc = new Scanner(System.in);
         BookService service = new BookService();
 
@@ -11,7 +10,7 @@ public class Main {
         while (choice != 3) {
             System.out.println("\n=== Login Menu ===");
             System.out.println("1: Login as Admin");
-            System.out.println("2: Login as customer");
+            System.out.println("2: Login as Customer");
             System.out.println("3: Exit");
             choice = sc.nextInt();
             sc.nextLine(); // Puffer leeren
@@ -46,7 +45,7 @@ public class Main {
             }
         }
     }
-    
+
     private static void customerMenu(BookService service, Scanner sc) {
         int choice = 0;
         while (choice != 5) {
