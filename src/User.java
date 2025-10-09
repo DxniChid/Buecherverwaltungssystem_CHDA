@@ -3,16 +3,17 @@ public abstract class User {
 
     protected int id;
     protected String username;
-    protected String password;
 
-    public User(int id, String username, String password) {
-        this.id = id;
+
+    public User(String username) {
+
         this.username = username;
-        this.password = password;
+
     }
 
-    public String getUsername() { return username; }
 
+
+    // abstrakte Methode → jede Unterklasse definiert ihr eigenes Menü
     public abstract void showMenu();
 
 
